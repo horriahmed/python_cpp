@@ -45,7 +45,7 @@ class Room
 namespace py = pybind11;
 
 
-PYBIND11_MODULE(room_component,greetings)
+PYBIND11_MODULE(Room_component,greetings)
 {
   greetings.doc() = "greeting_object 1.0";
   greetings.def("getVersion", &getVersion, "a function returning the version");
@@ -53,7 +53,7 @@ PYBIND11_MODULE(room_component,greetings)
    
     py::class_<Room>(greetings, "Room", py::dynamic_attr())
         .def(py::init<double ,double, double>())
-        .def("calculateArea(", &Room::calculateArea)
+        .def("calculateArea", &Room::calculateArea)
         .def("calculateVolume", &Room::calculateVolume)
         .def("getHeigh", &Room::getHeigh)
         .def("getBreadth", &Room::getBreadth)
