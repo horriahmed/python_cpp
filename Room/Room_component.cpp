@@ -6,7 +6,7 @@ char const* getVersion() {
 	return version;
 }
 
-cclass Room 
+class Room 
 {
     public:
         double length;
@@ -25,15 +25,15 @@ cclass Room
             return length * breadth * height;
         }
 
-        void getLength(){
+        double getLength(){
             return length;
         }
 
-        void getBreadth(){
+        double getBreadth(){
             return breadth;
         }
 
-        void getHeigh(){
+        double  getHeigh(){
             return height;
         }
 
