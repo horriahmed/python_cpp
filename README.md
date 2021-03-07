@@ -26,7 +26,7 @@ python3
 >>> 
 ```
 # Exemple d'une class C++ ( class Room)
-
+```
 >>> import Room_component
 >>> Room_component.getVersion()
 '1.0'
@@ -43,3 +43,4 @@ python3
 >>> room1.calculateArea()
 56.0
 >>> 
+```
