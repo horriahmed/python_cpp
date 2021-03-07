@@ -25,3 +25,21 @@ python3
 '1.0'
 >>> 
 ```
+# Exemple d'une class C++ ( class Room)
+
+>>> import Room_component
+>>> Room_component.getVersion()
+'1.0'
+>>> from Room_component import Room
+>>> room1=Room(7,8,10)
+>>> room1.getLength()
+7.0
+>>> room1.getHeigh()
+10.0
+>>> room1.getBreadth()
+8.0
+>>> room1.calculateVolume()
+560.0
+>>> room1.calculateArea()
+56.0
+>>> 
